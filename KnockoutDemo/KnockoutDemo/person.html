@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Person</title>
+   <link href="Content/app.css" rel="stylesheet" />
+   <script src="Scripts/jquery-1.8.2.min.js"></script>
+   <script src="Scripts/knockout-2.2.0.js"></script>
+</head>
+   <body>
+      <p>Please enter your name.</p>
+      first:<input type="text" data-bind="value: first, valueUpdate: 'afterkeydown'" />
+      last:<input type="text" data-bind="value: last, valueUpdate: 'afterkeydown'" />
+
+      <div class="hidden" data-bind="css: { hidden: hideWelcome }">
+         Welcome, <span data-bind="text: fullName"></span>!
+      </div>
+
+      <script src="Scripts/require.js" data-main="scripts/app/person.js"></script>
+   </body>
+</html>
