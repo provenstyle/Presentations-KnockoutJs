@@ -7,18 +7,18 @@
 </head>
    <body>
       
-      Name: <input type="text" data-bind="value: name"/> 
+      Name: <input type="text"/> 
       
-      <button data-bind="click: add">Add</button>
+      <button>Add</button>
 
       <h2>People</h2>
       
-      <ul data-bind="foreach: people">
-         <li data-bind="text: $data.name, click: $parent.select"></li>
+      <ul >
+         <li ></li>
       </ul>
       
       <h2>Selected Person</h2>
-      <h3 data-bind="text: selectedPerson().name"></h3>
+      <h3></h3>
 
       <script src="Scripts/require.js" data-main="Scripts/app/people.js"></script>
    </body>
