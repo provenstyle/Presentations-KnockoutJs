@@ -7,10 +7,20 @@
    <script src="Scripts/knockout-2.2.0.js"></script>
 </head>
    <body>
-      <p>Please enter your name.</p>
-      first:<input type="text" data-bind="value: first, valueUpdate: 'afterkeydown'" />
-      last:<input type="text" data-bind="value: last, valueUpdate: 'afterkeydown'" />
-
+      <h2 >Please enter your name.</h2>
+      First:<input type="text" data-bind="value: first, valueUpdate: 'afterkeydown'" />
+      Last:<input type="text" data-bind="value: last, valueUpdate: 'afterkeydown'" />
+      
+      <h2>Person</h2>      
+      <div>
+         First: <span data-bind="text: first"></span>
+      </div>
+      <div>
+         Last: <span data-bind="text: last"></span>   
+      </div>
+      
+      
+      <h2>Welcome</h2>
       <div class="hidden" data-bind="css: { hidden: hideWelcome }">
          Welcome, <span data-bind="text: fullName"></span>!
       </div>
