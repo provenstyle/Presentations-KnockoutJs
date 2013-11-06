@@ -1,28 +1,14 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Simplest Thing</title>
-   <script src="Scripts/jquery-1.8.2.js"></script>
-   <script src="Scripts/knockout-2.2.0.debug.js"></script>
+    <title>Knockout Demos</title>
 </head>
-   <body>
-      <div class="greeting">
-         Hello, <span data-bind="text: name"></span>!
-      </div>
-      <div class="message">
-         <span data-bind="text: message"></span>
-      </div>
-   </body>
-   
-   <script>
-      var greetingVm = {
-         name: "Michael"
-      };
-      ko.applyBindings(greetingVm, $('.greeting')[0]);
-
-      var messageVm = {
-        message: "Welcome to our demo." 
-      };
-      ko.applyBindings(messageVm, $('.message')[0]);
-   </script>
+<body>
+   <h1>Knockout Demo</h1>
+   <ul>
+      <li><a href="simple.html">The Simplest Thing</a></li>
+      <li><a href="person.html">Person</a></li>
+      <li><a href="people.html">People</a></li>
+   </ul>
+</body>
 </html>
