@@ -3,20 +3,12 @@
    $(function () {
 
       var vm = function () {
-         var first = ko.observable(''),
-             last = ko.observable(''),
-             fullName = ko.computed(function () {
-                return first() + " " + last();
-             }, this),
-             hideWelcome = ko.computed(function () {
-                return !first() && !last();
-             }, this);
+         var first = "Richard";
+             last = "Castle";             
 
          return {
             first: first,
-            last: last,
-            fullName: fullName,
-            hideWelcome: hideWelcome
+            last: last,            
          };
       };
 
